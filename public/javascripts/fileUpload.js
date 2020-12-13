@@ -15,12 +15,14 @@ function ready() {
         FilePondPluginImagePreview,
         FilePondPluginImageResize,
         FilePondPluginFileEncode,
+        FilePondPluginImageTransform,
     );
     
     FilePond.setOptions({
         stylePanelAspectRatio: 1 / coverAspectRatio,
         imageResizeTargetWidth: coverWidth,
         imageResizeTargetHeight: coverHeight,
+        imageTransformOutputQuality: 50,
     })
     
     FilePond.parse(document.body);
