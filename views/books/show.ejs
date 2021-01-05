@@ -12,7 +12,7 @@
         <div class="book-details-label">Author:</div>
         <div><%= book.author.name%></div>
         <div class="book-details-label">Publish Date:</div>
-        <div><%= book.publishDate.toDateString()%></div>
+        <div><%= book.publishDate.toDateString().split(' ').slice(1).join(' ')%></div>
         <div class="book-details-label">Page Count:</div>
         <div><%= book.pageCount %></div>
         <div class="book-details-label">Description:</div>
